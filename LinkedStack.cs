@@ -20,7 +20,7 @@ namespace MiroProgram_cs
             if (isEmpty()) top = p;
             else
             {
-                p.Link = top;
+                p.link = top;
                 top = p;
             }
         }
@@ -28,7 +28,7 @@ namespace MiroProgram_cs
         {
             if (isEmpty()) return null;
             Node p = top;
-            top = top.Link;
+            top = top.link;
             return p;
         }
         internal Node peek()
@@ -37,7 +37,7 @@ namespace MiroProgram_cs
         }
         internal void display()
         {
-            for (Node p = top; p != null; p = p.Link)
+            for (Node p = top; p != null; p = p.link)
                 p.display();
             Console.WriteLine();
         }

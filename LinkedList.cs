@@ -17,7 +17,7 @@ namespace MiroProgram_cs
             if (isEmpty()) front = rear = p;
             else
             {
-                rear.Link=p;
+                rear.link=p;
                 rear = p;
             }
         }
@@ -25,14 +25,14 @@ namespace MiroProgram_cs
         {
             if (isEmpty()) return null;
             Node p = front;
-            front = front.Link;
+            front = front.link;
             if (front == null) rear = null;
             return p;
         }
         internal Node peek() { return front; }
         internal void display()
         {
-            for (Node p = front; p != null; p = p.Link)
+            for (Node p = front; p != null; p = p.link)
                 p.display();
             Console.WriteLine();
         }
