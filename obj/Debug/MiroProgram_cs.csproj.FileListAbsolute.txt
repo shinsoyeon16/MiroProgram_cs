@@ -1,0 +1,7 @@
+C:\dev\MiroProgram_cs\bin\Debug\MiroProgram_cs.exe.config
+C:\dev\MiroProgram_cs\bin\Debug\MiroProgram_cs.exe
+C:\dev\MiroProgram_cs\bin\Debug\MiroProgram_cs.pdb
+C:\dev\MiroProgram_cs\obj\Debug\MiroProgram_cs.csprojAssemblyReference.cache
+C:\dev\MiroProgram_cs\obj\Debug\MiroProgram_cs.csproj.CoreCompileInputs.cache
+C:\dev\MiroProgram_cs\obj\Debug\MiroProgram_cs.exe
+C:\dev\MiroProgram_cs\obj\Debug\MiroProgram_cs.pdb
