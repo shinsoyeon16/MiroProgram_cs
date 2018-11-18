@@ -85,10 +85,10 @@ namespace MiroProgram_cs
             {
                 for (int j = 0; j < Maze.MAZE_COL_SIZE; j++)
                 {
-                    if (MAZE[0][j] == '0') { entry.row = 0; entry.col = j; break; }
-                    else if (MAZE[i][0] == '0') { entry.row = i; entry.col = 0; break; }
-                    else if (MAZE[0][Maze.MAZE_COL_SIZE] == '0') { exit.row = 0; exit.col = MAZE_COL_SIZE; break; }
-                    else if (MAZE[MAZE_ROW_SIZE][j] == '0') { exit.row = MAZE_ROW_SIZE; exit.col = j; break; }
+                    if (MAZE[0][j] == '0') { entry.row = 0; entry.col = j; }
+                    else if (MAZE[i][0] == '0') { entry.row = i; entry.col = 0;  }
+                    if (MAZE[Maze.MAZE_ROW_SIZE - 1][j] == '0') { exit.row = Maze.MAZE_ROW_SIZE; exit.col = j; }
+                    else if(MAZE[i][Maze.MAZE_COL_SIZE-2] == '0') { exit.row = i; exit.col = Maze.MAZE_COL_SIZE-2;}
                 }
             }
 
@@ -121,7 +121,7 @@ namespace MiroProgram_cs
                 return a == 1;
             }
         }
-        internal static void EscapeMaze()
+        internal static void EscapeMaze() //미로 탈출을 위한 함수
         {
             LinkedStack list = new LinkedStack(); // 다음 분기점의 정보를 저장하기 위한 연결리스트 (스택)
             ArrayStack stack = new ArrayStack(); //현재 분기점 탐색을 위한 스택 
@@ -162,7 +162,7 @@ namespace MiroProgram_cs
                     //현재위치가 미로의 출구가 아니라면 미로 탐색
                     else
                     {
-                        MAZE[row][col] = '.'; //지나온 자리 확인을 위해 변경
+                       if(MAZE[row][col]!='e') MAZE[row][col] = '.'; //지나온 자리 확인을 위해 변경
 
                         //현재 분기는 스택에 추가하여 탐색
                         if (isValidLocOnly(row, col))
