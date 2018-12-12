@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MiroProgram_cs
 {
+    /// <summary>
+    /// 배열로 만든 스택
+    /// </summary>
     internal class ArrayStack
     {
         const int MAX_STACK_SIZE = 300;

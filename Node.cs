@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MiroProgram_cs
 {
+    /// <summary>
+    /// 좌표와 연결리스트 구현을 위한 노드
+    /// </summary>
     internal class Node
     {
         public int row { get; set; }

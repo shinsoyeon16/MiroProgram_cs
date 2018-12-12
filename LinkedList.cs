@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MiroProgram_cs
 {
+    /// <summary>
+    /// 연결리스트로 만든 큐
+    /// </summary>
     internal class LinkedList
     {
         Node front;
@@ -17,7 +20,7 @@ namespace MiroProgram_cs
             if (isEmpty()) front = rear = p;
             else
             {
-                rear.link=p;
+                rear.link = p;
                 rear = p;
             }
         }

@@ -10,7 +10,7 @@ namespace MiroProgram_cs
     {
         static void Main(string[] args)
         {
-            Maze.LoadMaze("Maze_orign1.txt");
+            Maze.LoadMaze("../../miro/Maze_2.txt");
             Maze.EscapeMaze();
         }
     }

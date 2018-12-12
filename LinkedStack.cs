@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MiroProgram_cs
 {
+    /// <summary>
+    /// 연결리스트로 만든 스택
+    /// </summary>
     internal class LinkedStack
     {
         Node top;
